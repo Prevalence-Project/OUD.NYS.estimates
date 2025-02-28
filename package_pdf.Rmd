@@ -1,0 +1,29 @@
+---
+title: "OUD.NYS.estimates Package"
+date: "2024-04-09"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, include = FALSE)
+```
+```{r}
+library(tidyverse)
+library(flextable)
+```
+
+## Description
+This dataset was produced as part of the Opioid Use Disorder Prevalence in 57 New York State counties from 2017-2019: A Bayesian Evidence Synthesis. 
+It lives in the [OUD.NYS.estimates](https://github.com/Prevalence-Project/OUD.NYS.estimates) package for R. This package allows anyone who downloads it access to our estimates. 
+```{r echo=FALSE, include=TRUE}
+load("data/estimates.rda")
+
+estimates |> 
+  flextable() |> 
+  align(i = 1, part = "header", align = "center") |> 
+  width(width = 1) |> 
+  align(i = NULL, align = "center", part = "body")
+```
+

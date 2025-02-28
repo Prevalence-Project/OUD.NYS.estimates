@@ -6,7 +6,7 @@
 \title{Estimates}
 \format{
 A tibble with 1,026 rows and
-7 variables:
+11 variables:
 
 \describe{
 \item{\strong{Community}}{\tabular{ll}{

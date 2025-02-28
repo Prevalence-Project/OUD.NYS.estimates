@@ -1,13 +1,13 @@
 Package: OUD.NYS.estimates
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Opioid use disorder prevalence in 57 New York counties from 2017 to 2019: A Bayesian evidence synthesis
+Version: 0.9.1.01
 Authors@R: 
     person("Anna", "Calderon", , "axc2778@miami.edu", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: This package contains data of prevalence estimates of opioid use disorder (OUD) at local levels are critical for public health planning and surveillance, yet largely unavailable across the US especially at the local county level.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.0
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
